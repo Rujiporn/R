@@ -9,7 +9,8 @@ compute = function(input_string) {
  num1 = as.integer(values[3])
  result = switch(operator,
                   '+' = num0 + num1,
-                  '-' = num0 - num1
+                  '-' = num0 - num1,
+				  '*' = num0 * num1,
 				  NA)
   if (is.na(result)) {
     print('unknown operator!')
